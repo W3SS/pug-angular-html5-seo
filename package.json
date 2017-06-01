@@ -1,0 +1,31 @@
+{
+  "name": "pug-angular-html5-seo",
+  "version": "1.0.0",
+  "description": "Using Pug for SEO in Single Page Applications.",
+  "main": "index.js",
+  "scripts": {
+    "getpod": "node savePod.js podcast.json http://adventurezone.libsyn.com/rss",
+    "build-css": "node_modules/.bin/node-sass source/main.scss build/main.css --output-style compressed",
+    "build-js": "node_modules/.bin/webpack",
+    "build": "npm run build-css && npm run build-js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zapplebee/pug-angular-html5-seo.git"
+  },
+  "author": "Zachary Skalko",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.4",
+    "angular-route": "^1.6.4",
+    "express": "^4.14.0",
+    "jsonfile": "^3.0.0",
+    "moment": "^2.18.1",
+    "node-sass": "^4.5.3",
+    "pug": "^2.0.0-beta5",
+    "request": "^2.81.0",
+    "url-parse": "^1.1.9",
+    "webpack": "^2.6.1",
+    "xml2js": "^0.4.17"
+  }
+}

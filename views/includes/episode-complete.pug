@@ -1,0 +1,12 @@
+if(template === true)
+  //as template
+  - var episode = feed.episodes[0]
+div.episode
+  img(src=episode.image)
+  h3=episode.title
+  if(template === true)
+    label.episode-pub-date=episode.pubDate
+  else
+    label.episode-pub-date=moment(episode.pubDate)
+  div.episode-description!=episode.description
+  a(href=episode.mp3.url) Download

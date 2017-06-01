@@ -1,0 +1,15 @@
+include head.pug
+header(style="background-image:url('"+feed.image+"')")
+  nav
+    h1=feed.title
+    a(href="/") Home
+    a(href="/episodes") Episodes
+  div#summary=feed.summary
+div#container(ng-view)
+  if static
+    h2 All Episodes
+    each episode in feed.episodes
+      include includes/episode-brief.pug
+footer
+  nav
+    a(href="/episodes") All Episodes

@@ -1,0 +1,23 @@
+{"rssUrl":"{{rssUrl}}",
+  "title":"{{title}}",
+  "pubDate":"{{pubDate}}",
+  "lastBuild":"{{lastBuild}}",
+  "summary":"{{summary}}",
+  "description":"{{description}}",
+  "image":"{{image}}",
+  "author":"{{author}}",
+  "episodes":[
+    { "title":"{{episode.title}}",
+      "pubDate":"{{episode.pubDate}}",
+      "guid":"{{episode.guid}}",
+      "link":"{{episode.link}}",
+      "slug":"{{episode.slug}}",
+      "image":"{{episode.image}}",
+      "subtitle":"{{episode.subtitle}}",
+      "duration":"{{episode.duration}}",
+      "description":"{{episode.description}}",
+      "mp3":{
+        "length":"{{episode.mp3.length}}",
+        "type":"{{episode.mp3.type}}",
+        "url":"{{episode.mp3.url}}"}}
+      ]}

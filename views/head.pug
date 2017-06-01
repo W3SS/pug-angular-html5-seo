@@ -1,0 +1,41 @@
+doctype html
+html(lang="en",ng-app="app")
+  head
+    base(href="/")
+    meta(charset="utf-8")
+    meta(name="viewport",content="width=device-width")
+    link(rel="canonical",href=url)
+
+    // meta content
+    title=title
+    meta(name="description",content=description)
+
+    //Schema.org
+    meta(itemprop="name",content=title)
+    meta(itemprop="description",content=description)
+    meta(itemprop="image",content=featuredImage)
+
+    //twitter card
+    meta(name="twitter:card",content="summary")
+    meta(name="twitter:url",content=url)
+    meta(name="twitter:title", content=title)
+    meta(name="twitter:description", content=description)
+    meta(name="twitter:site",content="@zapplebee")
+    meta(name="twitter:creator",content="@zapplebee")
+    meta(name="twitter:image:src",content=featuredImage)    
+
+    //open graph
+    meta(property="og:title",content=title)
+    meta(property="og:type",content="website")
+    meta(property="og:url",content=url)
+    meta(property="og:image",content=featuredImage)
+    meta(property="og:description",content=description) 
+    meta(property="og:site_name",content="Zachary Skalko")
+    meta(property="fb:admins",content="851265320")
+
+    link(href="https://fonts.googleapis.com/css?family=Open+Sans:300,700",rel="stylesheet")
+    link(href="/static/main.css",rel="stylesheet")
+    script(src="/static/main.js")
+    title JSMN Pug Examples
+    
+  body
